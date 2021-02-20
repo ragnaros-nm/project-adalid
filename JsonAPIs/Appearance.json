@@ -1,0 +1,351 @@
+{
+    "_links": {
+      "self": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/ragnaros/cachuloo/appearance?namespace=profile-us"
+      }
+    },
+    "character": {
+      "key": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/ragnaros/cachuloo?namespace=profile-us"
+      },
+      "name": "Cachuloo",
+      "id": 160417356,
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1427?namespace=dynamic-us"
+        },
+        "name": "Ragnaros",
+        "id": 1427,
+        "slug": "ragnaros"
+      }
+    },
+    "playable_race": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Elfo de sangre",
+      "id": 10
+    },
+    "playable_class": {
+      "key": {
+        "href": "  "
+      },
+      "name": "Cazador",
+      "id": 3
+    },
+    "active_spec": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/254?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Puntería",
+      "id": 254
+    },
+    "gender": {
+      "type": "MALE",
+      "name": "Masculino"
+    },
+    "faction": {
+      "type": "HORDE",
+      "name": "Horda"
+    },
+    "guild_crest": {
+      "emblem": {
+        "id": 173,
+        "media": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/173?namespace=static-9.0.2_36532-us"
+          },
+          "id": 173
+        },
+        "color": {
+          "id": 14,
+          "rgba": {
+            "r": 177,
+            "g": 184,
+            "b": 177,
+            "a": 1.0
+          }
+        }
+      },
+      "border": {
+        "id": 5,
+        "media": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/border/5?namespace=static-9.0.2_36532-us"
+          },
+          "id": 5
+        },
+        "color": {
+          "id": 14,
+          "rgba": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1.0
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "id": 8,
+          "rgba": {
+            "r": 174,
+            "g": 75,
+            "b": 0,
+            "a": 1.0
+          }
+        }
+      }
+    },
+    "items": [
+      {
+        "id": 179943,
+        "slot": {
+          "type": "HEAD",
+          "name": "Cabeza"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 0,
+        "subclass": 3
+      },
+      {
+        "id": 179945,
+        "slot": {
+          "type": "SHOULDER",
+          "name": "Hombros"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 2,
+        "subclass": 3
+      },
+      {
+        "id": 53852,
+        "slot": {
+          "type": "SHIRT",
+          "name": "Camisa"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 3,
+        "subclass": 0
+      },
+      {
+        "id": 179940,
+        "slot": {
+          "type": "CHEST",
+          "name": "Pecho"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 4,
+        "subclass": 3
+      },
+      {
+        "id": 179946,
+        "slot": {
+          "type": "WAIST",
+          "name": "Cintura"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 5,
+        "subclass": 3
+      },
+      {
+        "id": 179944,
+        "slot": {
+          "type": "LEGS",
+          "name": "Piernas"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 6,
+        "subclass": 3
+      },
+      {
+        "id": 179941,
+        "slot": {
+          "type": "FEET",
+          "name": "Pies"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 7,
+        "subclass": 3
+      },
+      {
+        "id": 179947,
+        "slot": {
+          "type": "WRIST",
+          "name": "Muñecas"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 8,
+        "subclass": 3
+      },
+      {
+        "id": 179942,
+        "slot": {
+          "type": "HANDS",
+          "name": "Manos"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 9,
+        "subclass": 3
+      },
+      {
+        "id": 169223,
+        "slot": {
+          "type": "BACK",
+          "name": "Espalda"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 152,
+        "internal_slot_id": 14,
+        "subclass": 1
+      },
+      {
+        "id": 177858,
+        "slot": {
+          "type": "MAIN_HAND",
+          "name": "Mano derecha"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 15,
+        "subclass": 2
+      },
+      {
+        "id": 142504,
+        "slot": {
+          "type": "TABARD",
+          "name": "Tabardo"
+        },
+        "enchant": 0,
+        "item_appearance_modifier_id": 0,
+        "internal_slot_id": 18,
+        "subclass": 5
+      }
+    ],
+    "customizations": [
+      {
+        "option": {
+          "name": "Color de piel",
+          "id": 110
+        },
+        "choice": {
+          "id": 1607,
+          "display_order": 8
+        }
+      },
+      {
+        "option": {
+          "name": "Rostro",
+          "id": 111
+        },
+        "choice": {
+          "id": 1629,
+          "display_order": 3
+        }
+      },
+      {
+        "option": {
+          "name": "Peinado",
+          "id": 112
+        },
+        "choice": {
+          "name": "Coleta de zorro",
+          "id": 1652,
+          "display_order": 3
+        }
+      },
+      {
+        "option": {
+          "name": "Color de pelo",
+          "id": 113
+        },
+        "choice": {
+          "id": 1668,
+          "display_order": 2
+        }
+      },
+      {
+        "option": {
+          "name": "Vello facial",
+          "id": 114
+        },
+        "choice": {
+          "name": "Chiva",
+          "id": 1688,
+          "display_order": 8
+        }
+      },
+      {
+        "option": {
+          "name": "Color de tatuaje",
+          "id": 116
+        },
+        "choice": {
+          "id": 1706,
+          "display_order": 0
+        }
+      },
+      {
+        "option": {
+          "name": "Cuernos",
+          "id": 117
+        },
+        "choice": {
+          "name": "Ninguno",
+          "id": 1713,
+          "display_order": 0
+        }
+      },
+      {
+        "option": {
+          "name": "Venda",
+          "id": 118
+        },
+        "choice": {
+          "id": 1720,
+          "display_order": 0
+        }
+      },
+      {
+        "option": {
+          "name": "Tatuaje",
+          "id": 380
+        },
+        "choice": {
+          "name": "Ninguno",
+          "id": 1700,
+          "display_order": 0
+        }
+      },
+      {
+        "option": {
+          "name": "Color de ojos",
+          "id": 571
+        },
+        "choice": {
+          "id": 6584,
+          "display_order": 16
+        }
+      },
+      {
+        "option": {
+          "name": "Orejas",
+          "id": 582
+        },
+        "choice": {
+          "name": "Largas",
+          "id": 6714,
+          "display_order": 0
+        }
+      }
+    ]
+  }
