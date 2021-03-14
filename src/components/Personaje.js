@@ -1,5 +1,5 @@
 import React, { Fragment, useState,useEffect } from "react";
-import Resumen from './Resumen';
+import Perfil from './Perfil';
 
 const Personaje = ({ search, oauthResponse, invokeAPI, setInvokeAPI }) => {
     
@@ -26,7 +26,7 @@ const Personaje = ({ search, oauthResponse, invokeAPI, setInvokeAPI }) => {
     return (
         <Fragment>
         <h1>Desde Personaje:</h1>        
-            {apiResponse ? <Resumen  appearance={appearance} apiResponse={apiResponse}/> : null}
+            {apiResponse ? <Perfil  appearance={appearance} apiResponse={apiResponse}/> : null}
         </Fragment>
     );
 };

@@ -1,6 +1,23 @@
 import React, { Fragment } from "react";
 
 const Resumen = ({ appearance, apiResponse }) => {
+
+  useEffect(() => {
+    const CHARACTER_URL = `https://us.api.blizzard.com/profile/wow/character/${realm}/${characterName}/appearance?namespace=profile-${region}&locale=es_MX&access_token=${access_token}`;
+    const consultarAPI = async () => {
+        if (invokeAPI) {
+            const appearanceAPI = await fetch(CHARACTER_URL);
+            const response = await appearanceAPI.json();
+            setAppearance(response);
+            setApiResponse(true);
+            setInvokeAPI(false);
+        }
+    };
+
+    consultarAPI();
+}, [invokeAPI]);
+
+
   const {
     character,
     playable_race,

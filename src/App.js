@@ -1,10 +1,10 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { DarkmodeSwitch } from "reacthalfmoon";
+import React, { Fragment, useState, useEffect } from 'react';
+import { DarkmodeSwitch } from 'reacthalfmoon';
 
-import Buscador from "./components/Buscador";
-import Personaje from "./components/Personaje";
-import Error from "./components/Error";
-import Contendor from './components/Contenedor';
+import Buscador from './components/Buscador';
+import Error from './components/Error';
+import Tabs from './components/Tabs';
+import Perfil from './components/Perfil';
 
 function App() {
   
@@ -16,9 +16,9 @@ function App() {
   const [statusCodeOauth, setStatusCodeOauth] = useState(0);
 
   const [search, setSearch] = useState({
-    region: "",
-    realm: "",
-    characterName: "",
+    character_region: '',
+    character_realm: '',
+    character_name: '',
   });
 
   let componente;
@@ -26,26 +26,26 @@ function App() {
     const consultarAPI = async () => {
       //Obtener Token Oauth
       if (invokeOauth) {
-        const OAUTH_URL = "https://us.battle.net/oauth/token";
+        const OAUTH_URL = 'https://us.battle.net/oauth/token';
         const OAUTH_TOKEN = process.env.REACT_APP_OAUTH_TOKEN;
         console.log(OAUTH_TOKEN);
         const oauthAPI = await fetch(OAUTH_URL, {
-          method: "POST",
-          mode: "cors", 
-          cache: "no-cache",
-          credentials: "same-origin", 
+          method: 'POST',
+          mode: 'cors', 
+          cache: 'no-cache',
+          credentials: 'same-origin', 
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
+            'Content-Type': 'application/x-www-form-urlencoded',
             Authorization: `Basic ${OAUTH_TOKEN}`,
           },
-          body: "grant_type=client_credentials",
+          body: 'grant_type=client_credentials',
         });
         const status = await oauthAPI.status;
         
         const oauthResponse = await oauthAPI.json();
         if(status === 200){
           setStatusCodeOauth(status);
-          console.log("respuesta correcta: " + statusCodeOauth);
+          console.log('respuesta correcta: ' + statusCodeOauth);
           setOauthResponse(oauthResponse);        
           setInvokeOauth(false);
           setInvokeAPI(true);
@@ -57,11 +57,10 @@ function App() {
   }, [invokeOauth]);
 
   if (error) {
-    componente = <Error mensaje="No hay resultados" />;
+    componente = <Error mensaje='No hay resultados' />;
   } else{
     componente= null
   }
-  const icono= "https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg"
   return (
     <Fragment>
       <Buscador
@@ -72,10 +71,17 @@ function App() {
         setOauthResponse={setOauthResponse}
         setInvokeOauth={setInvokeOauth}
       />
-      <Contendor/>
+      
       {componente}
-      {statusCodeOauth === 200 ? <Personaje search={search} oauthResponse={oauthResponse} invokeAPI={invokeAPI} setInvokeAPI={setInvokeAPI}/> :null
+
+      {
+        statusCodeOauth === 200 ? 
+        <Perfil search={search} oauthResponse={oauthResponse} invokeAPI={invokeAPI} setInvokeAPI={setInvokeAPI}/> :null
       }
+      { 
+         statusCodeOauth === 200 ? <Tabs/> : null
+      }
+     
     </Fragment>
   );
 }

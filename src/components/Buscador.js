@@ -53,15 +53,15 @@ const Buscador = ({ search, setSearch, error, setError,setInvokeOauth ,setOauthR
       [event.target.name]: event.target.value.toLocaleLowerCase(),
     });
   };
-  const { region, realm, characterName } = search;
+  const { character_region, character_realm, character_name } = search;
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (
-      region.trim() === "" ||
-      realm.trim() === "" ||
-      characterName.trim() === ""
+      character_region.trim() === "" ||
+      character_realm.trim() === "" ||
+      character_name.trim() === ""
     ) {
       setError(true);
       return null;
@@ -79,10 +79,10 @@ const Buscador = ({ search, setSearch, error, setError,setInvokeOauth ,setOauthR
         
           <input
             type="text"
-            name="region"
+            name="character_region"
             className="form-control"
             placeholder="Region"
-            value={region}
+            value={character_region}
             onChange={obtenerDatos}
           />
         </Region>
@@ -90,10 +90,10 @@ const Buscador = ({ search, setSearch, error, setError,setInvokeOauth ,setOauthR
          
           <input
             type="text"
-            name="realm"
+            name="character_realm"
             className="form-control"
             placeholder="Reino"
-            value={realm}
+            value={character_realm}
             onChange={obtenerDatos}
           />
         </Reino>
@@ -101,10 +101,10 @@ const Buscador = ({ search, setSearch, error, setError,setInvokeOauth ,setOauthR
          
           <input
             type="text"
-            name="characterName"
+            name="character_name"
             className="form-control"
             placeholder="Personaje"
-            value={characterName}
+            value={character_name}
             onChange={obtenerDatos}
           />
         </Personaje>
