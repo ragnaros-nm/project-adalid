@@ -1,10 +1,17 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { DarkmodeSwitch } from 'reacthalfmoon';
+import styled from '@emotion/styled';
 
 import Buscador from './components/Buscador';
 import Error from './components/Error';
 import Tabs from './components/Tabs';
 import Perfil from './components/Perfil';
+
+const Mensaje = styled.div`
+  margin: 300px auto;
+  width:700px;
+ 
+`;
 
 function App() {
   
@@ -79,9 +86,13 @@ function App() {
         <Perfil search={search} oauthResponse={oauthResponse} invokeAPI={invokeAPI} setInvokeAPI={setInvokeAPI}/> :null
       }
       { 
-         statusCodeOauth === 200 ? <Tabs/> : null
+         statusCodeOauth === 200 ? <Tabs/> : 
+          <Mensaje>
+            <h2>Nada que mostrar todavia ;( </h2>
+            Ingresa informacion arriba para poder buscar.
+          </Mensaje>
       }
-     
+    
     </Fragment>
   );
 }
